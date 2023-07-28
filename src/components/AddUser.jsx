@@ -46,9 +46,7 @@ const closeModalHandler = () => {
 }
 //true & errormodal
   return (
-    <div>
-    
-
+    <React.Fragment>
       {error && <ErrorModel title={error.title} message={error.message} onClick={closeModalHandler} />}
       <Card className={classes.input}> 
         <form onSubmit={submitHandler}>
@@ -59,7 +57,7 @@ const closeModalHandler = () => {
             <Button type='submit'>AddUser</Button>
         </form>
     </Card>
-    </div>
+    </React.Fragment>
   
   )
   }
